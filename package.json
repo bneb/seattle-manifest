@@ -1,0 +1,17 @@
+{
+  "name": "seattle-manifest",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun build ./src/main.ts --outdir ./dist --target browser",
+    "dev": "bun build ./src/main.ts --outdir ./dist --target browser --watch & bun x servor . index.html --reload"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "playwright-core": "^1.59.1",
+    "zod": "^4.3.6"
+  }
+}

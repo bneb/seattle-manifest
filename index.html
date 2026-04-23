@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verified Manifest | Salt + KeuOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <div class="manifest-container" id="app">
+    <!-- Sidebar for sticky metrics -->
+    <aside class="sidebar">
+      <button class="theme-toggle" id="theme-toggle">MODE: DARK</button>
+      <div class="tax-meter">
+        <div class="tax-label" id="metric-label">System Latency</div>
+        <div class="tax-value-container">
+          <span class="tax-value" id="metric-value">2000</span>
+          <span class="tax-unit" id="metric-unit">cycles</span>
+        </div>
+      </div>
+      <div class="axiom-indicators">
+        <div class="axiom-indicator" id="axiom-1-indicator">Axiom I: The Security Tax is a Bug.</div>
+        <div class="axiom-indicator" id="axiom-2-indicator">Axiom II: Elision via Math.</div>
+        <div class="axiom-indicator" id="axiom-3-indicator">Axiom III: The 150-Cycle Architecture.</div>
+      </div>
+      <div class="verification-status">
+        <span class="verif-label">SMT Verification</span>
+        <div class="verif-badge" id="verif-badge">IDLE</div>
+      </div>
+    </aside>
+
+    <!-- Content area for scrolling sections -->
+    <main class="content-area" id="content-root">
+      <!-- Sections will be injected here by main.ts -->
+    </main>
+  </div>
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
